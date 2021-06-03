@@ -1,0 +1,73 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline-style: auto;
+}
+body {
+    background-image: url(https://inihilmi.github.io/hero-chemistry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: red;
+    border-style: solid;
+}
+td, th {
+    background-color: gainsboro;
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color:#dddddd;
+}
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: chartreuse;
+    background-color: azure;
+    height: fit-content;
+    width: fit-content;
+    font-size: 50px;
+}
+p {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: white;
+    font-family: fantasy;
+    font-size: x-large;
+    height: fit-content;
+    width: fit-content;
+}
+.Instagram {
+    background-color: #ff65d8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Twitter {
+    background-color:rgb(0, 162, 255);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer
+}
