@@ -6,8 +6,8 @@ img {
 }
 body { 
     background-image: url(https://wisnuhari65.github.io/Background%20CSS.jpg);
-    background-repeat: no-repeat
-    background-size: cover
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 table {
     font-family: Arial, Helvetica, sans-serif;
