@@ -1,39 +1,318 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    outline-style: auto;
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Poppins', sans-serif;
 }
-body { 
-    background-image: url(https://wisnuhari65.github.io/Background%20CSS.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+a {
+	color: inherit;
+	text-decoration: none;
+
+/*--header*/
+
 }
-table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    color:#170386;
-    border-style: dotted;
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
 }
-td, th {
-    background-color: gainsboro;
-    border: 5px solid #000000;
-    text-align: center;
-    padding: 10px;
+.header:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(64, 206, 175, 0.651);
 }
-tr:nth-child(even) {
-    background-color:#dddddd;
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
 }
-p {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: blue;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    height: fit-content;
-    width: fit-content;
+nav h1 {
+	padding: 15px 0px;
+	font-size: 25px;
+	color: #fff;
+	z-index: 1;
+	font: 'Poppins', sans-serif;
 }
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	color: #fff;
+	z-index:1 ;
+	font-size: 13px;
+	font: 'Comfortaa', cursive;
+}
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background:#e18c37;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%
+}
+
+/*--tampilan home--*/
+
+.text-box{
+	width: 90%;
+	color: #bda184;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font: 'Comfortaa', cursive;
+	z-index: 1;
+	text-align: center;
+}
+.text-box h1 {
+	font-size: 63px
+}
+.text-box p{
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	color:#bda184;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-size: 15px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #e18c37;
+	background: #e18c37;
+	transition: 1s;
+}
+
+/*--about--*/
+
+.about{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+p{
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px
+}
+
+
+/*--footer--*/
+.medsos{
+	align-content: center;
+	color: #69694f;
+}
+.medsos h3 {
+	font-weight: 250;
+	color:#69694f;
+	text-align: center;
+}
+.medsos ul li{
+	display: inline-block;
+	text-align: center;
+	alignment-baseline: central;
+}
+.footer{
+	color: #69694f;
+	text-align: center;
+}
+
+/*----------About us page----------*/
+.sub-header {
+	height: 30vh;
+	width: 100%;
+	background-image: url('../img/banner2.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+.sub-header:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(64, 206, 175, 0.651);
+}
+/*---About me---*/
+.ab-al{
+	flex-basis: 48%;
+	padding:30px 2px;
+}
+.ab-al img {
+	width: 300px;
+	height: 300px
+}
+.ab-al h2{
+	padding-top: 0;
+}
+.ab-al p{
+	padding: 15px 0 25px;
+}
+
+/*----------Get to know me----------*/
+.sub-header2 {
+	height: 30vh;
+	width: 100%;
+	background-image: url('../img/banner3.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+.sub-header2:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(64, 206, 175, 0.651);
+}
+
+/*---fav---*/
+.fav{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px
+}
+p{
+	color: #69694f
+}
+
+.fav ul li{
+	display: inline-block;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.favo{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom : 30px;
+	position: relative;
+	overflow: hidden;
+}
+.favo img {
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(64, 206, 175, 0.651);
+}
+
+.layer h3{
+	width: 100%;
+	color: #fff;
+	font-weight: 300;
+	font-size: 20px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+/*----------Contact page----------*/
+.sub-header3 {
+	height: 30vh;
+	width: 100%;
+	background-image: url('../img/banner4.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+.sub-header3:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(64, 206, 175, 0.651);
+}
+.contact{
+	color: #000000;
+	object-position: center;
+}
+
+/*----------Gallery page----------*/
+.sub-header4 {
+	height: 30vh;
+	width: 100%;
+	background-image: url('../img/banner5.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+.sub-header4:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(64, 206, 175, 0.651);
