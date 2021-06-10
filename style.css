@@ -1,123 +1,40 @@
-{
-    padding:0;
-    margin:0;
-    font-family: sans-serif;
-}
-a{
-    color: inherit ;
-    text-decoration: none;
-}
-.medsos{
-    padding:5px 0;
-    background-color: brown
-}
-.medsos ul li {
-    display: inline-block;
-    color: beige;
-    margin-right: 10px;
-}
-.container {
-    width: 80%;
-    margin:0 auto;
-}
-.container:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-header h1{
-    float: left;
-    padding:15px 0px;
-    color: royalblue;
-}
-header ul{
-    float: right;
-}
-header ul li {
-    display: inline-block;
-}
-header ul li a {
-    padding:25px 20px;
-    display: inline-block;
-}
-header ul li a:hover {
-    background-color:gold;
-    color: ivory;
-}
-.active{
-    background-color:gold;
-    color: ivory;
-}
-.banner{
-    height: 60vh;
-    background-image: url(bg.jpg) ;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner :after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom:0px;
-}
-.banner h2{
-    color:white;
-    z-index: 5;
-    padding:20px 25px ;
-    border: 3px solid white;
-}
-section{
-    padding: 50px 0;
-}
-section h3{
-    text-align: center;
-}
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     outline-style: auto;
+}
+body {
+    background-color: pink; 
+    background-image: url(https://wisnuhari65.github.io/Background%20CSS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color:hsl(249, 96%, 27%);
+    color:#170386;
     border-style: dotted;
 }
-section h3{
+td, th {
+    background-color: gainsboro;
+    border: 5px solid #000000;
     text-align: center;
-    padding: 120px 0;
-    color: black;
-    margin-bottom: 20px ;
+    padding: 10px;
 }
-.about{
-    color: green;
-    line-height: 25px;
+tr:nth-child(even) {
+    background-color:#dddddd;
 }
-footer{
-    padding: 30px 0;
-    background-color:brown;
-    color: white;
+p {
     text-align: center;
-}
-.label{
-    background-color: gold;
-    color: white;
-}
-.gallery{
-    margin: 5px;
-    width: auto;
-    float: inline-start;
-}
-.gallery img {
-    width: 200px;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    height: fit-content;
+    width: fit-content;
 }
